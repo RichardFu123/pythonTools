@@ -1,7 +1,7 @@
 # tools
 * **自己编写的一些方便自己的小工具**
 
-###exponentialDecayCalculator.py
+### exponentialDecayCalculator.py
 * 用来方便计算机器学习里的exponential decay。
 * exponential decay公式：**finalValue = initialValue（decayRate）^（globalStep/decayStep）**
 * 选择目标，输入其他4个值。
