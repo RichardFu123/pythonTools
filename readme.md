@@ -10,3 +10,6 @@
 
 ### convertImgSize.py
 * 用于批量转换图片大小。
+
+### XMLMaker.py
+* 用文本文件生成xml文件.
