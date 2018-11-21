@@ -1,4 +1,7 @@
 # tools
+
+> Shawn
+
 * **自己编写的一些方便自己的小工具**
 
 ### exponentialDecayCalculator.py
@@ -13,3 +16,6 @@
 
 ### XMLMaker.py
 * 用文本文件生成xml文件.
+
+### SalaryEmailSender
+* 用于读取xlsx格式的指定内容的excel工资表格,并用email发送.
