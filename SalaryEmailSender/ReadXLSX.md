@@ -1,8 +1,22 @@
-"""
-Shawn 11/21/2018
-excel读取部分
-"""
+# ReadXLSX.py
 
+> Shawn
+> 11/23/2018
+
+
+这个类负责读取excel表格的内容.根据需求就是读取xlsx文件.
+
+这个类实现的是根据关键字确定所需信息区域,.
+
+然后根据读取的每个人的信息分别打包成制作单个邮件所需要的全部数据的数据包
+
+软件本体见 https://blog.csdn.net/weixin_41084236/article/details/84325652
+
+openpyxl相关的知识详见[这里](https://openpyxl.readthedocs.io/en/stable/)
+
+----
+
+```python
 import openpyxl
 import OneEmailInfo
 
@@ -90,9 +104,10 @@ class ReadXLSX:
 
         return pack
 
+```
 
-if __name__ == "__main__":
-    test = ReadXLSX("test.xlsx")
-    packs = test.get_emails_pack()
-    for one in packs:
-        print(one)
+由于工资表和地址信息是分离的,所以要分开查询. 
+这里偷了个懒,没有用特别严谨的方式去查询email地址.
+所以需要保证,每个姓名的右侧单元格填的是email地址,且每个工资表内的人员在地址表中均存在
+
+如果要改进,可以考虑地址表中缺失的状况, 还可以引入正则表达式来确认email地址.
