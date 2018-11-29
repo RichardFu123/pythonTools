@@ -19,3 +19,6 @@
 
 ### SalaryEmailSender
 * 用于读取xlsx格式的指定内容的excel工资表格,并用email发送.
+
+### img2ascii.py
+* 可以将图片转成字符文本(需要等宽字体显示, 仅供娱乐)
